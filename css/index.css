@@ -1,0 +1,51 @@
+* {
+  color: #e8e8e8;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+/*
+* Navigation Bar
+*/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/*
+* Navigation Bar end
+*/
+
+.intro {
+  max-width: 50vw;
+  max-height: 50vh;
+  text-align: start;
+  padding: 20px;
+}
+
+.project_link {
+  padding: 20px;
+}
+
+h2 {
+  padding: 20px;
+}

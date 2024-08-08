@@ -1,25 +1,25 @@
 <!doctype html>
 
 <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>Ryantangit</title>
-  <h1>Ryan Tan</h1>
+  <head>
+    <title>Ryantangit</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
   <body>
     <nav class="menu">
+      <h1>Ryan Tan</h1>
       <ul>
-        <a href="index.html"> home </a>
-        <a href="blogs.html"> blog </a>
+        <li>
+          <a href="index.html"> home </a>
+        </li>
+        <li>
+          <a href="blogs.html"> blog </a>
+        </li>
       </ul>
     </nav>
     <main>
-      <h2>About Me</h2>
-      <p>
-        Hello, there! My name is Ryan Tan, a master student in the Bay Area
-        studying software engineering. I studied computer science for my
-        undergrad at UC Berkeley. I have enterprise software industry experience
-        working as a software engineer for state of Utah's Department of Motor
-        Vehicles and Motor Vehicle Enforcement Division.
-      </p>
       <h2>Links</h2>
       <ul>
         <li>
@@ -29,18 +29,36 @@
           <a href="https://www.linkedin.com/in/ryan111tan/"> Linkedin </a>
         </li>
       </ul>
-      <h2>Projects</h2>
-      <a href="https://birdie-picks-ryantangits-projects.vercel.app/">
-        Birdiepicks
-      </a>
+      <h2>About Me</h2>
+      <p class="intro">
+        Hello, there! My name is Ryan Tan, a master student in the Bay Area
+        studying software engineering. I studied computer science for my
+        undergrad at UC Berkeley. I have industry experience working as a
+        software engineer for state of Utah's Department of Motor Vehicles and
+        Motor Vehicle Enforcement Division.
+      </p>
       <h2>Experience</h2>
       <ul>
         <h3>SWE @ Fast Enterprise LLC, Salt Lake City, UT</h3>
       </ul>
+      <h2>Projects</h2>
+      <div class="project_link">
+        <a href="https://birdie-picks-ryantangits-projects.vercel.app/">
+          Birdiepicks
+        </a>
+        <ul>
+          <li>- Next.JS, deployed on cloud via Vercel</li>
+          <li>- League of Legends statistic analyzer</li>
+        </ul>
+      </div>
       <h2>Academics</h2>
-      <ul>
-        <h3>University of California, Berkeley</h3>
-        <h3>San Jose State University</h3>
+      <ul class="academics">
+        <li>
+          <h3>University of California, Berkeley</h3>
+        </li>
+        <li>
+          <h3>San Jose State University</h3>
+        </li>
       </ul>
     </main>
   </body>
