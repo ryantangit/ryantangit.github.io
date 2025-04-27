@@ -16,8 +16,20 @@ function flipCoin() {
 
 function flipCoinMinimal() {
 	const coinCanvas = document.querySelector(".coin-canvas");
-	const coinResult = (Math.random() > .5) ? "Heads" : "Tails" ;
-	if (coinResult  == coinCanvas.innerHTML.slice(0, 5))  {
+	const randomNum = Math.floor(Math.random() * 10) / 10; 
+	console.log(randomNum);
+	let coinResult;
+	if (randomNum < .5) {
+		coinResult = "Heads";
+	}
+	if (randomNum == .5) {
+		coinResult = "Landed on the side";
+	}
+	if (randomNum > .5) {
+		coinResult = "Tails";
+	}
+
+	if (coinResult.slice(0, 5)  == coinCanvas.innerHTML.slice(0, 5))  {
 		coinCanvas.innerHTML += " again";
 	} else {
 		coinCanvas.innerHTML = coinResult;
