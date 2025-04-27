@@ -7,8 +7,6 @@ function flipCoin() {
 		case "Minimal": 
 			flipCoinMinimal();
 			break;
-		case "Basic":
-			break;
 		case "Deluxe":
 			break;
 	}
@@ -16,19 +14,17 @@ function flipCoin() {
 
 function flipCoinMinimal() {
 	const coinCanvas = document.querySelector(".coin-canvas");
-	const randomNum = Math.floor(Math.random() * 10) / 10; 
-	console.log(randomNum);
 	let coinResult;
-	if (randomNum < .5) {
+	const randomNum = Math.random();
+	if (randomNum <= .49) {
 		coinResult = "Heads";
 	}
-	if (randomNum == .5) {
+	if (randomNum > .49 && randomNum < .51) {
 		coinResult = "Landed on the side";
 	}
-	if (randomNum > .5) {
+	if (randomNum >= .51) {
 		coinResult = "Tails";
 	}
-
 	if (coinResult.slice(0, 5)  == coinCanvas.innerHTML.slice(0, 5))  {
 		coinCanvas.innerHTML += " again";
 	} else {
@@ -36,3 +32,6 @@ function flipCoinMinimal() {
 	}
 }
 
+function flipCoinDeluxe() {
+	
+}
