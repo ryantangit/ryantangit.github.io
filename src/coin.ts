@@ -1,8 +1,8 @@
 const coinFlipButton = document.querySelector(".coin-flip-button");
-coinFlipButton.addEventListener("click", flipCoin);
+coinFlipButton?.addEventListener("click", flipCoin);
 
 function flipCoin() {
-	const coinFlipMode = document.querySelector("select[name=\"coin-mode\"]").value;
+	const coinFlipMode = document.querySelector<HTMLSelectElement>("select[name=\"coin-mode\"]")?.value;
 	switch (coinFlipMode) {
 		case "Minimal": 
 			flipCoinMinimal();
@@ -14,7 +14,10 @@ function flipCoin() {
 
 function flipCoinMinimal() {
 	const coinCanvas = document.querySelector(".coin-canvas");
-	let coinResult;
+	if (!coinCanvas) {
+		throw new Error("DOM queryselector: coin-canvas missing")
+	}
+	let coinResult = "";
 	const randomNum = Math.random();
 	if (randomNum <= .49) {
 		coinResult = "Heads";
@@ -32,6 +35,3 @@ function flipCoinMinimal() {
 	}
 }
 
-function flipCoinDeluxe() {
-	
-}
