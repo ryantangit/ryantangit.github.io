@@ -36,6 +36,7 @@ function flipCoinMinimalUpdate(coinResult: string): void {
 
 function flipCoinDeluxeUpdate(coinResult: string): void {
 	const coinCanvas = querySelectorVerbose<HTMLCanvasElement>("#coin-canvas");
+	console.log(coinResult);
 	const scene = new THREE.Scene();
 	scene.background = new THREE.Color(0xFFFFFF);
 	const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 100);
