@@ -7,6 +7,7 @@ export default defineConfig({
         main: 'index.html',
         coin: 'src/coin.html',
         about: 'src/about.html',
+				nowb4tmrw: 'src/nowb4tmrw.html'
       },
     },
   },
