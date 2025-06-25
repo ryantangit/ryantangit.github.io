@@ -1,2 +1,1 @@
-# Website for all things and purposes
-
+# Website for all things and purposes related to me
