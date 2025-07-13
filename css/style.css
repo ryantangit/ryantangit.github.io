@@ -1,0 +1,29 @@
+body {
+  --max-width: 1337px;
+}
+body {
+  --zi-base: 0;
+  --zi-navigation: 1000;
+}
+
+.content-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 30px;
+  z-index: var(--zi-navigation);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
