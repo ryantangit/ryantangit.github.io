@@ -1,6 +1,5 @@
 const NavRoutes = [
   { href: "/", label: "Ryan Tan" },
-  { href: "/pages/about.html", label: "About" },
   { href: "/pages/projects.html", label: "Projects" },
   { href: "/pages/blogs.html", label: "Blogs" },
 ];

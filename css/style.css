@@ -1,14 +1,32 @@
-body {
-  --max-width: 1337px;
+html {
+  font-family: Roboto, sans-serif;
 }
+
 body {
+  --max-width: 1000px;
+  --color-wikibox-background: #f8f9fa;
+  --color-wikibox-heading: #e6e6fa;
   --zi-base: 0;
   --zi-navigation: 1000;
 }
 
+a {
+  text-decoration: none;
+}
+
 #content-container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+/* This is to fix instances where the wikibox is of greater length than the content.
+ * When 
+ * https://www.w3schools.com/howto/howto_css_clearfix.asp */
+#content-container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #navbar-container {
@@ -31,4 +49,63 @@ body {
   padding-left: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.content-header {
+  margin: 0 0 0 0;
+  font-family: Times, serif;
+  font-weight: lighter;
+}
+
+.content-bar {
+  margin-top: 0;
+  border: 1px solid;
+}
+
+.content-subheader {
+  margin: 0 0 0 0;
+  font-family: Times, serif;
+  font-weight: lighter;
+  border-bottom: 1px solid;
+  display: flow-root;
+  overflow: hidden;
+}
+
+.wikibox {
+  float: right;
+  max-width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--color-wikibox-background);
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.wikibox-title {
+  text-align: center;
+  font-size: 125%;
+}
+
+.wikibox-image {
+  text-align: center;
+}
+
+.wikibox-section {
+  background-color: var(--color-wikibox-heading);
+  padding: 4px;
+}
+.wikibox-heading {
+  text-align: center;
+}
+.wikibox-detail {
+  text-align: center;
+  font-size: 95%;
+}
+
+@media (max-width: 650px) {
+  .wikibox {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
 }
