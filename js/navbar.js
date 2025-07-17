@@ -12,7 +12,7 @@ function navbar() {
   }
   const navigation = document.createElement("nav");
   const navbarList = document.createElement("ul");
-  navbarList.className = "navbar";
+  navbarList.className = "navbar-list";
   navigation.appendChild(navbarList);
   NavRoutes.forEach((route) => {
     const li = document.createElement("li");
