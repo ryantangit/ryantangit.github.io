@@ -2,10 +2,6 @@ const NavRoutes = [
   { href: "/", label: "Ryan Tan" },
   { href: "/pages/projects.html", label: "Projects" },
   { href: "/pages/blogs.html", label: "Blogs" },
-  {
-    href: "https://drive.google.com/file/d/146o1klxTukZCAZlxomOniXbvxwqRH8Za/view?usp=sharing",
-    label: "Resume",
-  },
 ];
 function navbar() {
   const navbarContainer = document.getElementById("navbar-container");
